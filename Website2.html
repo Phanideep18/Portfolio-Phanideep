@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -88,7 +88,7 @@
         }
 
         .header {
-            position: sticky;
+            position: static;
             top: 0;
             left: 0;
             width: 100%;
@@ -332,6 +332,17 @@
             color: var(--text-color);
         }
         
+        .project-links a.live-demo {
+            color: var(--primary-color);
+            background: #2b3548;
+            padding: 0.3rem 0.6rem;
+            border-radius: 5px;
+        }
+        
+        .project-links a.live-demo:hover {
+            background: #3a4863;
+        }
+        
         #contact {
             text-align: center;
             padding-bottom: 6rem;
@@ -343,6 +354,44 @@
             margin: 0 auto 2.5rem auto;
             font-size: 1.1rem;
             color: var(--text-color-dark);
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin: 2rem auto 0 auto;
+            text-align: left;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: var(--text-color);
+            background-color: var(--card-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .contact-form .btn {
+            width: 100%;
         }
 
         .btn {
@@ -507,7 +556,7 @@
                   <img src="image.jpg" alt="Profile Photo" />
                   <p class="profile-name">Chamarthy Vaibhava Phanideep</p>
                   <p class="profile-title">Developer | Designer</p>
-                  <p class="profile-email"><a href="mailto:chamarthyphanideep@gmail.com">chamarthyphanideep@gmail.com</a></p>
+                  <p class="profile-email"><a href="mailto:chamarthyphanideep941@gmail.com">chamarthyphanideep941@gmail.com</a></p>
                 </div>
             </div>
 
@@ -518,7 +567,7 @@
                 </p>
                 <p>
                     I firmly believe that the intersection of passion and hard work is where true potential is realized. This belief has led me to explore various facets of the tech field, allowing me to develop a robust foundation in <span>Frontend Development</span>, <span>UI/UX</span>, <span>Artificial Intelligence</span>, and <span>Machine Learning</span>. I am ready to embrace new challenges and seize opportunities for growth and innovation.
-                </p>
+                </body
             </div>
         </section>
 
@@ -552,34 +601,55 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-content">
-                        <h3>Smart Segregation Bin</h3>
-                        <p>An IoT-based project to automatically segregate waste. It uses an ultrasonic sensor to detect fill-level, a moisture sensor to differentiate wet/dry waste, and servo motors to direct the waste into the correct compartments.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Phanideep18" target="_blank"><i data-feather="github"></i>View on GitHub</a>
-                        </div>
-                    </div>
+                <h3>Smart Segregation Bin</h3>
+                <p>An IoT-based project to automatically segregate waste. It uses an ultrasonic sensor to detect fill-level, a moisture sensor to differentiate wet/dry waste, and servo motors to direct the waste into the correct compartments.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Phanideep18/smart-segregation-bin" target="_blank"><i data-feather="github"></i>View on GitHub</a>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Random BG Generator</h3>
-                        <p>A simple and fun web app built with HTML, CSS, and JavaScript. It dynamically changes the background color and displays a random image from a list with the click of a button. Based on my Program 4B.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Phanideep18" target="_blank"><i data-feather="github"></i>View on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-        </section>
+        </div>
+
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Random BG Generator</h3>
+                <p>A simple and fun web app built with HTML, CSS, and JavaScript. It dynamically changes the background color and displays a random image from a list with the click of a button. Based on my Program 4B.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Phanideep18/random-bg-generator" target="_blank"><i data-feather="github"></i>View on GitHub</a>
+                    <a href="https://phanideep18.github.io/random-bg-generator/" target="_blank" class="live-demo"><i data-feather="external-link"></i>Live Demo</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Even/Odd Number Checker</h3>
+                <p>A simple web tool to check if a number is even or odd. Built with HTML and JavaScript, it includes input validation to ensure the user enters a whole number.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Phanideep18/even-odd-checker" target="_blank"><i data-feather="github"></i>View on GitHub</a>
+                    <a href="https://phanideep18.github.io/even-odd-checker/" target="_blank" class="live-demo"><i data-feather="external-link"></i>Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
         
         <section id="contact" class="container">
             <h2 class="section-title">Contact <span>Me</span></h2>
-            <p>
-                I'm currently seeking new opportunities and creative challenges. 
-                Feel free to reach out on LinkedIn or check out my work on GitHub!
-            </p>
-            <button class="btn" id="contact-btn">Get in Touch</button>
+            
+            <form id="contact-form" class="contact-form" action="#">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+
         </section>
 
     </main>
@@ -643,7 +713,7 @@
             sectionObserver.observe(section);
         });
 
-        const contactBtn = document.getElementById('contact-btn');
+        const contactForm = document.getElementById('contact-form');
         const alertModal = document.getElementById('alert-modal');
         const alertMessage = document.getElementById('alert-message');
         let alertTimeout;
@@ -661,10 +731,23 @@
             }, 3000);
         }
 
-        if(contactBtn) {
-            contactBtn.onclick = () => {
-                showAlert('Thanks for your interest! Please reach out via my portfolio links.');
-            };
+        if(contactForm) {
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+                    showAlert('Please fill out all fields.');
+                    return;
+                }
+
+                showAlert('Message sent successfully!');
+                
+                contactForm.reset();
+            });
         }
 
     </script>
